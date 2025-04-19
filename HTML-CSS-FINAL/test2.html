@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .browse-categories .container {
+        display: flex;
+        padding: 80px 115px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        align-self: stretch;
+        max-width: 1280px;
+        width: 100%;
+    }
+
+    .browse-categories .container h3 {
+        color: #FFF;
+        font-family: "Work Sans";
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        text-transform: capitalize;
+    }
+
+    .browse-categories .container .browse__list {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch;
+        flex-wrap: wrap;
+    }
+
+    .browse__list .browse__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 240px; /* Kích thước tối thiểu 240px để khớp với browse__item__above */
+        max-width: 240px; /* Giới hạn chiều rộng để đồng bộ */
+        border-radius: 20px;
+        background: #3B3B3B;
+    }
+
+    .browse__item .browse__item__above {
+        position: relative;
+        width: 240px; /* Kích thước cố định */
+        height: 240px;
+        overflow: hidden;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .browse__item .browse__item__above::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.10);
+        backdrop-filter: blur(7.5px);
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
+    }
+
+    .browse__item__above .browse__item__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 240px; /* Kích thước cố định theo yêu cầu */
+        height: 240px;
+        object-fit: cover; /* Đảm bảo hình ảnh lấp đầy và giữ tỷ lệ */
+        object-position: center; /* Căn giữa */
+        z-index: 0; /* Nằm dưới lớp blur */
+    }
+
+    .browse__item__above .browse__item__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px; /* Kích thước theo yêu cầu */
+        height: 100px;
+        flex-shrink: 0;
+        z-index: 2; /* Nằm trên lớp blur */
+    }
+
+    .browse__item__below {
+        display: flex;
+        padding: 20px 30px 25px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        align-self: stretch;
+        color: White;
+        font-family: "Work Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+    }
+</style>
+<body>
+
+<section class="browse-categories">
+    <div class="container">
+        <h3>Browse Categories</h3>
+        <div class="browse__list">
+            <div class="browse__item">
+                <div class="browse__item__above">
+                    <img src="assets/img/Brose1.png" alt="background image" class="browse__item__bg">
+                    <img src="assets/icons/BroseIcon1.svg" alt="browse icon" class="browse__item__icon">
+                </div>
+                <div class="browse__item__below">Art</div>
+            </div>
+            <div class="browse__item">
+                <div class="browse__item__above">
+                    <img src="assets/img/Brose1.png" alt="background image" class="browse__item__bg">
+                    <img src="assets/icons/BroseIcon1.svg" alt="browse icon" class="browse__item__icon">
+                </div>
+                <div class="browse__item__below">Art</div>
+            </div>
+            <div class="browse__item">
+                <div class="browse__item__above">
+                    <img src="assets/img/Brose1.png" alt="background image" class="browse__item__bg">
+                    <img src="assets/icons/BroseIcon1.svg" alt="browse icon" class="browse__item__icon">
+                </div>
+                <div class="browse__item__below">Art</div>
+            </div>
+            <div class="browse__item">
+                <div class="browse__item__above">
+                    <img src="assets/img/Brose1.png" alt="background image" class="browse__item__bg">
+                    <img src="assets/icons/BroseIcon1.svg" alt="browse icon" class="browse__item__icon">
+                </div>
+                <div class="browse__item__below">Art</div>
+            </div>
+            <div class="browse__item">
+                <div class="browse__item__above">
+                    <img src="assets/img/Brose1.png" alt="background image" class="browse__item__bg">
+                    <img src="assets/icons/BroseIcon1.svg" alt="browse icon" class="browse__item__icon">
+                </div>
+                <div class="browse__item__below">Art</div>
+            </div>
+            <!-- Các browse__item khác tương tự, cập nhật src của background image nếu cần -->
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
