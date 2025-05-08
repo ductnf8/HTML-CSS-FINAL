@@ -5,6 +5,7 @@
 /* * Tablet * */
 /* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
 @media screen and (max-width: 991px) {
+
     .hero .container {
         max-width: 834px;
         margin: 0 auto;
@@ -17,6 +18,9 @@
         display: none;
     }
 
+    .header{
+        padding: 15px 50px;
+    }
     .header__inner {
         position: relative;
     }
@@ -252,16 +256,11 @@
     }
 
     .browse__list .browse__item {
-        flex: 1 0 0px;
+        flex: 1 1 0;
         max-width: 150px;
     }
 
 
-    /*.browse__list .browse__item:nth-child(5) .browse__item__below,*/
-    /*.browse__list .browse__item:nth-child(6) .browse__item__below,*/
-    /*.browse__list .browse__item:nth-child(7) .browse__item__below {*/
-    /*    padding-bottom: 47px;*/
-    /*}*/
     .browse__item .browse__item__above {
         width: 150px;
         height: 142px;
@@ -521,7 +520,7 @@
 /* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
 @media screen and (max-width: 767px) {
     .header {
-        padding: 40px 30px;
+        padding: 15px 30px;
     }
 
     .hero .container {
@@ -685,6 +684,23 @@
         /*align-items: flex-start;*/
         align-self: stretch;
         gap: 20px;
+        /*justify-content: space-between;*/
+    }
+    .browse__list .browse__item {
+        flex: 1 1 0;
+        /*max-width: calc(50% - 10px);*/
+    }
+
+
+
+    .browse__item .browse__item__above {
+        width: 100%;
+        height: 142px;
+    }
+
+    .browse__item__above .browse__item__img {
+        /*width: 100%;*/
+        height: 142px;
     }
 
     /* =============== End Browse =============  */

@@ -1513,6 +1513,16 @@ footer .container {
     gap: 10px;
 }
 
+
+.community__icon a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.community__icon a:hover {
+    transform: translateY(-5px) scale(1.1); /* Nhích lên và phóng to 10% */
+}
+
 .footer__item__center {
     display: flex;
     /*width: 240px;*/
